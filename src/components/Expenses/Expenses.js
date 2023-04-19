@@ -21,7 +21,7 @@ function Expenses(props) {
         selected={filteredYear}
         onChangeFilter={filterChangeHandler}
       />
-      <ExpensesChart/>
+      <ExpensesChart expenses={props.items}/>
       <ExpensesList items={filteredExpenses}/>
     </Card>
   );
